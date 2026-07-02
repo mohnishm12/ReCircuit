@@ -1,5 +1,5 @@
 import { spawn, spawnSync } from "node:child_process";
-import { mkdirSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { chromium } from "playwright";
 
@@ -120,6 +120,44 @@ try {
 
   await sectionPage.screenshot({ path: join(outDir, "recircuit-section-contact.png"), fullPage: false });
   await sectionPage.close();
+
+  const researchRoutes = [
+    { path: "/research", name: "research", mustContain: ["Public research portal", "Publication files"] },
+    { path: "/research/whitepaper-v2", name: "research-whitepaper", mustContain: ["Executive Summary", "Current Status"] },
+    { path: "/research/architecture", name: "research-architecture", mustContain: ["Original SVG diagrams", "System Architecture"] },
+    { path: "/research/roadmap", name: "research-roadmap", mustContain: ["Transparent path", "research to pilot"] },
+    { path: "/research/resources", name: "research-resources", mustContain: ["Download, cite, inspect sources", "Recommended citation"] }
+  ];
+
+  for (const route of researchRoutes) {
+    const page = await browser.newPage({ viewport: { width: 1440, height: 950 } });
+    await page.goto(`${url}${route.path}`, { waitUntil: "networkidle" });
+    const pageState = await page.locator("main").evaluate((element, expectedText) => {
+      const text = element.textContent?.trim() ?? "";
+      return {
+        textLength: text.length,
+        matches: expectedText.map((needle) => text.includes(needle))
+      };
+    }, route.mustContain);
+
+    if (pageState.matches.some((match) => !match) || pageState.textLength < 400) {
+      throw new Error(`Research route ${route.path} not visibly populated`);
+    }
+    await page.screenshot({ path: join(outDir, `${route.name}.png`), fullPage: false });
+    await page.close();
+  }
+
+  for (const artifact of [
+    "public/research/recircuit-research-whitepaper-v2.0.pdf",
+    "public/research/recircuit-research-whitepaper-v2.0.docx",
+    "public/research/recircuit-research-whitepaper-v2.0.md",
+    "public/research/citation.cff",
+    "public/research/diagrams/system-architecture.svg"
+  ]) {
+    if (!existsSync(join(process.cwd(), artifact))) {
+      throw new Error(`Missing research artifact: ${artifact}`);
+    }
+  }
 
   await browser.close();
   writeFileSync(join(outDir, "visual-check.txt"), "visual render ok\n");

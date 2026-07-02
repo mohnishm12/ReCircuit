@@ -293,7 +293,7 @@ function Hero() {
           </p>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <Button asChild showArrow>
-              <a href="#whitepaper">Read Whitepaper</a>
+              <a href="/research/whitepaper-v2">Read Whitepaper</a>
             </Button>
             <Button asChild variant="ghost">
               <a href="#platform">Explore Platform</a>
@@ -684,8 +684,6 @@ function Roadmap() {
 }
 
 function Whitepaper() {
-  const [open, setOpen] = useState(false);
-
   return (
     <section id="whitepaper" className="section-shell">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
@@ -695,22 +693,22 @@ function Whitepaper() {
             The intelligence layer for circular electronics.
           </h2>
           <p className="mt-6 text-lg leading-8 text-[#a0a0a0]">
-            A concise founder brief covering the problem, recovery intelligence, carbon methodology, and product
-            architecture behind ReCircuit.
+            A publication-ready research whitepaper covering the global context, architecture, AI methods, roadmap,
+            risks, references, and current build status behind ReCircuit.
           </p>
           <div className="mt-6 flex flex-wrap gap-3 text-sm text-[#a0a0a0]">
-            <span className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5">Version 0.1</span>
-            <span className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5">7 min read</span>
-            <span className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5">Founder research note</span>
+            <span className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5">Version 2.0</span>
+            <span className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5">Public research release</span>
+            <span className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1.5">References included</span>
           </div>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Button asChild showArrow>
-              <a href="/recircuit-ai-circular-economy-whitepaper.pdf" download>
+              <a href="/research/recircuit-research-whitepaper-v2.0.pdf" download>
                 Download PDF
               </a>
             </Button>
-            <Button variant="ghost" onClick={() => setOpen((value) => !value)}>
-              {open ? "Close preview" : "Open preview"}
+            <Button asChild variant="ghost" showArrow>
+              <a href="/research">Research portal</a>
             </Button>
           </div>
         </Reveal>
@@ -719,7 +717,7 @@ function Whitepaper() {
             <div className="absolute inset-5 rounded-[8px] bg-[radial-gradient(circle_at_50%_0%,rgba(20,241,149,0.16),transparent_40%)]" />
             <motion.div
               className="relative h-full rounded-[8px] border border-white/10 bg-[#f6f7f2] p-7 text-black shadow-2xl"
-              animate={{ rotateY: open ? -18 : 0, rotateX: open ? 3 : 0 }}
+              whileHover={{ rotateY: -10, rotateX: 2 }}
               transition={{ type: "spring", stiffness: 90, damping: 16 }}
               style={{ transformStyle: "preserve-3d" }}
             >
@@ -730,7 +728,7 @@ function Whitepaper() {
                 resale, risk, and compliance in one decision.
               </p>
               <div className="mt-10 space-y-3">
-                {["Version 0.1", "Research foundation", "Prototype direction"].map((item) => (
+                {["Version 2.0", "Research portal", "PDF + DOCX + Markdown"].map((item) => (
                   <div key={item} className="flex items-center gap-3 border-t border-black/10 pt-3 text-sm">
                     <Check className="size-4" />
                     {item}
@@ -740,12 +738,12 @@ function Whitepaper() {
               <div className="absolute bottom-7 left-7 right-7">
                 <div className="mb-2 flex justify-between text-xs text-black/45">
                   <span>Reading progress</span>
-                  <span>{open ? "68%" : "24%"}</span>
+                  <span>72%</span>
                 </div>
                 <div className="h-1.5 rounded-full bg-black/10">
                   <motion.div
                     className="h-full rounded-full bg-black"
-                    animate={{ width: open ? "68%" : "24%" }}
+                    animate={{ width: "72%" }}
                     transition={{ duration: 0.55 }}
                   />
                 </div>
@@ -939,7 +937,7 @@ function Footer() {
         </div>
         <p>recircuit.online</p>
         <div className="flex gap-4">
-          <a href="#whitepaper" className="transition hover:text-white">Whitepaper</a>
+          <a href="/research" className="transition hover:text-white">Research</a>
           <a href="#status" className="transition hover:text-white">Status</a>
           <a href="#contact" className="transition hover:text-white">Contact</a>
         </div>

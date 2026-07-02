@@ -1,0 +1,14 @@
+[
+  {
+    "version": "0.1",
+    "date": "2026",
+    "label": "Founder research note",
+    "summary": "Short public brief describing the initial problem, AI recovery concept, ESG evidence direction, and project status."
+  },
+  {
+    "version": "2.0",
+    "date": "2026",
+    "label": "Publication whitepaper",
+    "summary": "Full research whitepaper with references, system architecture, AI methods, enterprise workflows, roadmap, risks, appendices, citation metadata, PDF, DOCX, Markdown source, and research portal."
+  }
+]

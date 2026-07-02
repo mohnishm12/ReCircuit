@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">Enterprise Workflow</title>
+  <desc id="desc">Original ReCircuit research diagram.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#7DF9FF"/>
+    </marker>
+    <linearGradient id="bg" x1="0" x2="1">
+      <stop offset="0" stop-color="#050706"/>
+      <stop offset="1" stop-color="#101613"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="680" fill="url(#bg)"/>
+  <text x="60" y="72" fill="#F5F7F2" font-size="30" font-family="Inter, Arial" font-weight="800">Enterprise Workflow</text>
+  <text x="60" y="105" fill="#9CA3AF" font-size="15" font-family="Inter, Arial">ReCircuit Research Whitepaper v2.0</text>
+
+  <rect x="80" y="170" width="190" height="70" rx="10" fill="#111816" stroke="#14F195" stroke-width="1.4"/>
+  <text x="175.0" y="201.0" text-anchor="middle" fill="#F5F7F2" font-size="16" font-family="Inter, Arial" font-weight="700">Consumers</text>
+
+
+  <rect x="80" y="300" width="190" height="70" rx="10" fill="#111816" stroke="#6EA8FE" stroke-width="1.4"/>
+  <text x="175.0" y="331.0" text-anchor="middle" fill="#F5F7F2" font-size="16" font-family="Inter, Arial" font-weight="700">Businesses</text>
+
+
+  <rect x="80" y="430" width="190" height="70" rx="10" fill="#111816" stroke="#7DF9FF" stroke-width="1.4"/>
+  <text x="175.0" y="461.0" text-anchor="middle" fill="#F5F7F2" font-size="16" font-family="Inter, Arial" font-weight="700">Recyclers</text>
+
+<line x1="270" y1="205" x2="480" y2="300" stroke="#7DF9FF" stroke-width="1.4" marker-end="url(#arrow)" opacity="0.85"/>
+<line x1="270" y1="335" x2="480" y2="335" stroke="#7DF9FF" stroke-width="1.4" marker-end="url(#arrow)" opacity="0.85"/>
+<line x1="270" y1="465" x2="480" y2="370" stroke="#7DF9FF" stroke-width="1.4" marker-end="url(#arrow)" opacity="0.85"/>
+
+  <rect x="480" y="270" width="265" height="120" rx="10" fill="#111816" stroke="#F8C14A" stroke-width="1.4"/>
+  <text x="612.5" y="326.0" text-anchor="middle" fill="#F5F7F2" font-size="16" font-family="Inter, Arial" font-weight="700">Asset Intelligence Graph</text>
+
+<line x1="745" y1="330" x2="915" y2="235" stroke="#7DF9FF" stroke-width="1.4" marker-end="url(#arrow)" opacity="0.85"/>
+<line x1="745" y1="330" x2="915" y2="425" stroke="#7DF9FF" stroke-width="1.4" marker-end="url(#arrow)" opacity="0.85"/>
+
+  <rect x="915" y="200" width="210" height="70" rx="10" fill="#111816" stroke="#14F195" stroke-width="1.4"/>
+  <text x="1020.0" y="231.0" text-anchor="middle" fill="#F5F7F2" font-size="16" font-family="Inter, Arial" font-weight="700">ESG Reports</text>
+
+
+  <rect x="915" y="390" width="210" height="70" rx="10" fill="#111816" stroke="#6EA8FE" stroke-width="1.4"/>
+  <text x="1020.0" y="421.0" text-anchor="middle" fill="#F5F7F2" font-size="16" font-family="Inter, Arial" font-weight="700">Government Views</text>
+
+<text x="480" y="585" fill="#9CA3AF" font-size="16" font-family="Inter, Arial">Different users, one evidence model: identity, condition, custody, pathway, carbon, and compliance context.</text>
+</svg>

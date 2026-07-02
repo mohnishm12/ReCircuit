@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">AI Pipeline</title>
+  <desc id="desc">Original ReCircuit research diagram.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#7DF9FF"/>
+    </marker>
+    <linearGradient id="bg" x1="0" x2="1">
+      <stop offset="0" stop-color="#050706"/>
+      <stop offset="1" stop-color="#101613"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="680" fill="url(#bg)"/>
+  <text x="60" y="72" fill="#F5F7F2" font-size="30" font-family="Inter, Arial" font-weight="800">AI Pipeline</text>
+  <text x="60" y="105" fill="#9CA3AF" font-size="15" font-family="Inter, Arial">ReCircuit Research Whitepaper v2.0</text>
+
+  <rect x="70" y="210" width="160" height="68" rx="10" fill="#111816" stroke="#14F195" stroke-width="1.4"/>
+  <text x="150.0" y="240.0" text-anchor="middle" fill="#F5F7F2" font-size="16" font-family="Inter, Arial" font-weight="700">Images</text>
+
+
+  <rect x="70" y="310" width="160" height="68" rx="10" fill="#111816" stroke="#6EA8FE" stroke-width="1.4"/>
+  <text x="150.0" y="340.0" text-anchor="middle" fill="#F5F7F2" font-size="16" font-family="Inter, Arial" font-weight="700">Metadata</text>
+
+<line x1="230" y1="244" x2="330" y2="278" stroke="#7DF9FF" stroke-width="1.4" marker-end="url(#arrow)" opacity="0.85"/>
+<line x1="230" y1="344" x2="330" y2="312" stroke="#7DF9FF" stroke-width="1.4" marker-end="url(#arrow)" opacity="0.85"/>
+
+  <rect x="330" y="250" width="170" height="82" rx="10" fill="#111816" stroke="#7DF9FF" stroke-width="1.4"/>
+  <text x="415.0" y="287.0" text-anchor="middle" fill="#F5F7F2" font-size="16" font-family="Inter, Arial" font-weight="700">Computer Vision</text>
+
+<line x1="500" y1="291" x2="575" y2="291" stroke="#7DF9FF" stroke-width="1.4" marker-end="url(#arrow)" opacity="0.85"/>
+
+  <rect x="575" y="250" width="170" height="82" rx="10" fill="#111816" stroke="#F8C14A" stroke-width="1.4"/>
+  <text x="660.0" y="287.0" text-anchor="middle" fill="#F5F7F2" font-size="16" font-family="Inter, Arial" font-weight="700">Forecasting</text>
+
+<line x1="745" y1="291" x2="820" y2="291" stroke="#7DF9FF" stroke-width="1.4" marker-end="url(#arrow)" opacity="0.85"/>
+
+  <rect x="820" y="250" width="210" height="82" rx="10" fill="#111816" stroke="#14F195" stroke-width="1.4"/>
+  <text x="925.0" y="287.0" text-anchor="middle" fill="#F5F7F2" font-size="16" font-family="Inter, Arial" font-weight="700">Recommendation</text>
+
+<line x1="925" y1="332" x2="925" y2="415" stroke="#7DF9FF" stroke-width="1.4" marker-end="url(#arrow)" opacity="0.85"/>
+
+  <rect x="820" y="415" width="210" height="82" rx="10" fill="#111816" stroke="#7DF9FF" stroke-width="1.4"/>
+  <text x="925.0" y="452.0" text-anchor="middle" fill="#F5F7F2" font-size="16" font-family="Inter, Arial" font-weight="700">Confidence Review</text>
+
+
+  <rect x="330" y="415" width="250" height="82" rx="10" fill="#111816" stroke="#6EA8FE" stroke-width="1.4"/>
+  <text x="455.0" y="452.0" text-anchor="middle" fill="#F5F7F2" font-size="16" font-family="Inter, Arial" font-weight="700">Carbon + ESG Methods</text>
+
+<line x1="580" y1="456" x2="820" y2="456" stroke="#7DF9FF" stroke-width="1.4" marker-end="url(#arrow)" opacity="0.85"/>
+<text x="70" y="575" fill="#9CA3AF" font-size="16" font-family="Inter, Arial">AI supports classification, estimation, and explanation. It does not replace evidence or human review.</text>
+</svg>
