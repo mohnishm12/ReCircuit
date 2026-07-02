@@ -16,7 +16,7 @@ const geist = Geist({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://recircuit.online"),
+  metadataBase: new URL("https://mohnishm12.github.io/ReCircuit"),
   title: {
     default: "ReCircuit | AI for the Circular Economy",
     template: "%s | ReCircuit"
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     title: "ReCircuit | Building Intelligence for the Circular Economy",
     description:
       "Founder-led climate AI research project for smarter e-waste recovery, reverse logistics, and ESG intelligence.",
-    url: "https://recircuit.online",
+    url: "https://mohnishm12.github.io/ReCircuit",
     siteName: "ReCircuit",
     type: "website"
   },

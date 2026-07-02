@@ -8,7 +8,7 @@
   },
   "version": "2.0",
   "datePublished": "2026",
-  "url": "https://recircuit.online/research/whitepaper-v2",
+  "url": "https://mohnishm12.github.io/ReCircuit/research/whitepaper-v2",
   "abstract": "Electronic waste is no longer only a disposal problem. It is a fragmented intelligence problem across product identity, material value, reverse logistics, climate accounting, repairability, and compliance evidence. ReCircuit proposes an AI platform for material intelligence across the circular economy. The platform vision combines structured device intake, computer vision, forecasting, pricing logic, carbon estimation, ESG evidence, and API-accessible records so that recovery decisions can be made with more context and less ambiguity. This publication separates current status from future capability. ReCircuit has a public website, research foundation, architecture direction, and prototype work in development. It does not claim customers, revenue, funding, deployments, investors, employees, partnerships, awards, or validated performance metrics.",
   "publisher": {
     "@type": "Organization",

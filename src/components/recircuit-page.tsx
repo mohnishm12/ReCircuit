@@ -935,7 +935,7 @@ function Footer() {
           <Recycle className="size-5 text-[#14f195]" />
           <span className="font-semibold tracking-[0.18em] text-white">RECIRCUIT</span>
         </div>
-        <p>recircuit.online</p>
+        <p>mohnishm12.github.io/ReCircuit</p>
         <div className="flex gap-4">
           <a href="/research" className="transition hover:text-white">Research</a>
           <a href="#status" className="transition hover:text-white">Status</a>
@@ -951,9 +951,9 @@ function StructuredData() {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "ReCircuit",
-    url: "https://recircuit.online",
+    url: "https://mohnishm12.github.io/ReCircuit",
     slogan: "Building the Intelligence Layer for the Circular Economy",
-    sameAs: ["https://recircuit.online"],
+    sameAs: ["https://mohnishm12.github.io/ReCircuit"],
     description:
       "Founder-led climate AI research project exploring electronics recovery, reverse logistics, ESG intelligence, e-waste recycling, and carbon intelligence.",
     knowsAbout: [
